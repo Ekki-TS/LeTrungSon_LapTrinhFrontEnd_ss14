@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f6f7fb;
+    color: #333;
+}
+
+/* BUTTON */
+.btn {
+    background: #6366f1;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid #6366f1;
+    color: #6366f1;
+    padding: 6px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn-outline.white {
+    border-color: #fff;
+    color: #fff;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: #fff;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #6366f1;
+}
+
+.nav {
+    display: flex;
+    gap: 25px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+.auth {
+    display: flex;
+    gap: 10px;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 50px;
+    background: #6366f1;
+    color: #fff;
+}
+
+.hero-left {
+    width: 50%;
+}
+
+.hero-left h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero-left p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.hero-right {
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.stat {
+    background: #fff;
+    color: #333;
+    flex: 1 1 45%;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* WHY */
+.why {
+    padding: 60px 50px;
+    background: #fff;
+}
+
+.why h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.why-list {
+    display: flex;
+    gap: 20px;
+}
+
+.why-card {
+    flex: 1;
+    background: #f6f7fb;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* COURSES */
+.courses {
+    padding: 60px 50px;
+}
+
+.courses h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.course-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.course-card {
+    background: #fff;
+    width: calc(33.333% - 20px);
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.course-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.price {
+    font-weight: bold;
+    color: #6366f1;
+}
+
+/* FOOTER */
+.footer {
+    display: flex;
+    gap: 40px;
+    padding: 40px 50px;
+    background: #1f2937;
+    color: #fff;
+}
+
+.footer a {
+    display: block;
+    color: #ccc;
+    text-decoration: none;
+    margin-top: 8px;
+}
+
+/* TABLET */
+@media (max-width: 1024px) {
+    .hero {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .hero-left,
+    .hero-right {
+        width: 100%;
+    }
+
+    .course-card {
+        width: calc(50% - 20px);
+    }
+
+    .why-list {
+        flex-wrap: wrap;
+    }
+
+    .why-card {
+        flex: 0 0 calc(33.333% - 20px);
+    }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-left h1 {
+        font-size: 28px;
+    }
+
+    .stat {
+        flex: 1 1 100%;
+    }
+
+    .course-card {
+        width: 100%;
+    }
+
+    .why-card {
+        flex: 1 1 100%;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+}
